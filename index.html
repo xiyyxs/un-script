@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="un&script — A modern, blazing-fast, and user-friendly code editor. Download free for Windows, macOS, and Linux.">
+  <meta name="keywords" content="un&script, code editor, IDE, developer tools, free download">
+  <meta name="author" content="un&script Team">
+  <title>un&script — Code Editor</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-brand">
+      <img src="logo.png" alt="un&script" class="nav-brand__logo" width="46" height="46">
+      <span class="nav-brand__name">un&amp;script</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-links__item nav-links__item--active" data-section="hero">Overview</a>
+      <a href="#about" class="nav-links__item" data-section="about">About</a>
+      <a href="#install" class="nav-links__item" data-section="install">Download</a>
+      <a href="#why-us" class="nav-links__item" data-section="why-us">Features</a>
+      <a href="#versions" class="nav-links__item" data-section="versions">Releases</a>
+      <a href="#install" class="nav-links__cta"><i class="fas fa-download"></i> Download</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span class="nav-hamburger__line"></span>
+      <span class="nav-hamburger__line"></span>
+      <span class="nav-hamburger__line"></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-menu__link" data-mobile-link><i class="fas fa-home"></i> Overview</a>
+    <a href="#about" class="mobile-menu__link" data-mobile-link><i class="fas fa-users"></i> About Us</a>
+    <a href="#install" class="mobile-menu__link" data-mobile-link><i class="fas fa-download"></i> Download</a>
+    <a href="#why-us" class="mobile-menu__link" data-mobile-link><i class="fas fa-star"></i> Features</a>
+    <a href="#versions" class="mobile-menu__link" data-mobile-link><i class="fas fa-code-branch"></i> Releases</a>
+    <a href="#cta" class="mobile-menu__link" data-mobile-link><i class="fas fa-rocket"></i> Get Started</a>
+    <a href="#install" class="mobile-menu__cta" data-mobile-link><i class="fas fa-download"></i> Download Free</a>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <i class="fas fa-circle"></i>
+          Version 1.0 Alpha — Now Available
+        </div>
+        <h1 class="hero__title">
+          Write Code<br>
+          <span class="hero__title-gradient">Faster &amp; Smarter</span>
+        </h1>
+        <p class="hero__desc">
+          A modern, lightweight code editor built with a beautiful glassmorphism interface, powered by the industry-standard Monaco Editor engine.
+        </p>
+        <div class="hero__actions">
+          <a href="#install" class="btn btn--primary">
+            <i class="fas fa-download"></i> Download Free
+          </a>
+          <a href="#about" class="btn btn--secondary">
+            <i class="fas fa-arrow-right"></i> Learn More
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-icon"><i class="fas fa-code"></i></div>
+            <div class="hero__stat-value" data-count="100">0+</div>
+            <div class="hero__stat-label">Built-in Syntaxes</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-icon"><i class="fas fa-rocket"></i></div>
+            <div class="hero__stat-value" data-count="1">0</div>
+            <div class="hero__stat-label">Initial Release</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="hero__stat-value" data-count="100">0%</div>
+            <div class="hero__stat-label">Local &amp; Secure</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__waves" aria-hidden="true">
+      <svg class="hero__wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,160 C360,80 720,200 1080,120 C1260,80 1380,100 1440,120 L1440,200 L0,200 Z" opacity="0.5"/>
+        <path d="M0,180 C480,100 960,200 1440,140 L1440,200 L0,200 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal"><i class="fas fa-circle"></i> About Us</div>
+        <h2 class="section-title reveal">Built by Developers,<br><span>for Developers</span></h2>
+        <p class="section-subtitle reveal">
+          Built as a passion project by an independent developer to prove that a code editor can be both visually stunning and highly responsive.
+        </p>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="about__paragraph reveal">
+            <span class="about__highlight">un&amp;script</span> was born from a desire for clean code and truly elegant tooling.
+            The goal was simple: combine the power of a modern code editor with a uniquely beautiful glassmorphism interface.
+          </p>
+          <p class="about__paragraph reveal">
+            As an <span class="about__highlight">independent developer</span>, I understand what it means to want a tool that doesn't just work, but feels incredible to use. Every detail has been crafted with aesthetics and simplicity in mind.
+          </p>
+          <p class="about__paragraph reveal">
+            This project is completely free and completely local. No telemetry, no forced cloud accounts, just you and your code.
+          </p>
+        </div>
+        <div class="about__card-stack">
+          <div class="about-card reveal reveal-d1">
+            <div class="about-card__icon"><i class="fas fa-bullseye"></i></div>
+            <div class="about-card__content">
+              <h4>Independent Project</h4>
+              <p>Created by a solo developer focused on pushing the boundaries of UI design in desktop applications.</p>
+            </div>
+          </div>
+          <div class="about-card reveal reveal-d2">
+            <div class="about-card__icon"><i class="fas fa-bolt"></i></div>
+            <div class="about-card__content">
+              <h4>Fast & Lightweight</h4>
+              <p>Built on top of Electron with minimal overhead, ensuring quick startup times and responsive typing.</p>
+            </div>
+          </div>
+          <div class="about-card reveal reveal-d3">
+            <div class="about-card__icon"><i class="fas fa-paint-brush"></i></div>
+            <div class="about-card__content">
+              <h4>Glassmorphism</h4>
+              <p>A custom frameless window design that breaks away from traditional boring grey boxes.</p>
+            </div>
+          </div>
+          <div class="about-card reveal reveal-d4">
+            <div class="about-card__icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="about-card__content">
+              <h4>Privacy First</h4>
+              <p>Your code stays on your machine. No hidden tracking, no telemetry, no data collection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="install" id="install">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal"><i class="fas fa-circle"></i> Download</div>
+        <h2 class="section-title reveal">Choose Your <span>Platform</span></h2>
+        <p class="section-subtitle reveal">
+          un&amp;script is available for all major operating systems. Download and start coding in under a minute.
+        </p>
+      </div>
+      <div class="install__platforms">
+        <div class="platform-card reveal reveal-d1">
+          <div class="platform-card__icon"><i class="fab fa-windows"></i></div>
+          <h3 class="platform-card__name">Windows</h3>
+          <p class="platform-card__version">Windows 10 / 11 (64-bit)</p>
+          <p class="platform-card__size">Size: ~85 MB</p>
+          <a href="uniscript Setup 1.0.0.exe" class="platform-card__btn" style="display:block; text-align:center; margin-bottom:10px;">
+            <i class="fas fa-download"></i> Download Installer
+          </a>
+        </div>
+        <div class="platform-card reveal reveal-d2">
+          <div class="platform-card__icon"><i class="fab fa-apple"></i></div>
+          <h3 class="platform-card__name">macOS</h3>
+          <p class="platform-card__version">macOS 12+ (Apple Silicon &amp; Intel)</p>
+          <p class="platform-card__size">Size: ~92 MB</p>
+          <button class="platform-card__btn" disabled style="opacity:0.5; cursor:not-allowed;">
+            <i class="fas fa-clock"></i> Coming Soon
+          </button>
+        </div>
+        <div class="platform-card reveal reveal-d3">
+          <div class="platform-card__icon"><i class="fab fa-linux"></i></div>
+          <h3 class="platform-card__name">Linux</h3>
+          <p class="platform-card__version">Ubuntu 20.04+ / Fedora / Arch</p>
+          <p class="platform-card__size">Size: ~78 MB</p>
+          <button class="platform-card__btn" disabled style="opacity:0.5; cursor:not-allowed;">
+            <i class="fas fa-clock"></i> Coming Soon
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal"><i class="fas fa-circle"></i> Features</div>
+        <h2 class="section-title reveal">Why Choose <span>un&amp;script?</span></h2>
+        <p class="section-subtitle reveal">
+          We put care into every feature so you can focus on what matters most — writing great code.
+        </p>
+      </div>
+      <div class="why-us__grid">
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-card__icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="feature-card__title">Fast Startup</h3>
+          <p class="feature-card__desc">Optimized core built on Electron ensures the editor opens quickly when you need it.</p>
+        </div>
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-card__icon"><i class="fas fa-palette"></i></div>
+          <h3 class="feature-card__title">Glassmorphism UI</h3>
+          <p class="feature-card__desc">A truly unique, semi-transparent interface that adapts to your desktop background for a premium look.</p>
+        </div>
+        <div class="feature-card reveal reveal-d3">
+          <div class="feature-card__icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="feature-card__title">Monaco Engine</h3>
+          <p class="feature-card__desc">Powered by the exact same world-class code editing engine used in VS Code, giving you reliable syntax highlighting.</p>
+        </div>
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-card__icon"><i class="fas fa-folder-open"></i></div>
+          <h3 class="feature-card__title">Project Explorer</h3>
+          <p class="feature-card__desc">Built-in file explorer lets you open entire project directories, seamlessly navigate files, and manage your workspace.</p>
+        </div>
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-card__icon"><i class="fas fa-code-branch"></i></div>
+          <h3 class="feature-card__title">Git Integration</h3>
+          <p class="feature-card__desc">View file modifications at a glance with built-in Git status colors right inside your project tree.</p>
+        </div>
+        <div class="feature-card reveal reveal-d3">
+          <div class="feature-card__icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="feature-card__title">100% Local</h3>
+          <p class="feature-card__desc">No telemetry, no hidden requests, no tracking. Your code remains securely on your machine at all times.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="versions" id="versions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal"><i class="fas fa-circle"></i> Releases</div>
+        <h2 class="section-title reveal">All <span>Releases</span></h2>
+        <p class="section-subtitle reveal">
+          Choose the release that fits your needs. We recommend the latest stable version for production use.
+        </p>
+      </div>
+      <div class="versions__table-wrapper reveal">
+        <table class="versions__table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Highlights</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>v1.0.0-alpha</strong></td>
+              <td>Jun 27, 2026</td>
+              <td><span class="version-badge version-badge--alpha"><i class="fas fa-circle"></i> Alpha</span></td>
+              <td>Initial Alpha Release</td>
+              <td><a href="uniscript Setup 1.0.0.exe" class="version-download-btn" data-ver="1.0.0-alpha" style="text-decoration: none; display: inline-block;"><i class="fas fa-download"></i> Download</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-section__glow" aria-hidden="true"></div>
+      <div class="cta-section__inner">
+        <div class="section-label reveal"><i class="fas fa-circle"></i> Get Started</div>
+        <h2 class="section-title reveal">Ready to Code<br><span>the Modern Way?</span></h2>
+        <p class="section-subtitle reveal">
+          Join thousands of developers who already chose un&amp;script as their daily driver.
+          Free, no limits, forever.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#install" class="btn btn--primary"><i class="fas fa-download"></i> Download un&amp;script</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="cta__features reveal">
+          <div class="cta-feature"><i class="fas fa-check"></i> Free Forever</div>
+          <div class="cta-feature"><i class="fas fa-check"></i> Open Source</div>
+          <div class="cta-feature"><i class="fas fa-check"></i> Cross-Platform</div>
+          <div class="cta-feature"><i class="fas fa-check"></i> Active Community</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <img src="logo.png" alt="un&script" class="footer__brand-logo" width="32" height="32">
+            un&amp;script
+          </div>
+          <p>A modern code editor for those who value speed, convenience, and beautiful design.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Navigation</h4>
+          <div class="footer__links">
+            <a href="#hero" class="footer__link"><i class="fas fa-home"></i> Overview</a>
+            <a href="#about" class="footer__link"><i class="fas fa-users"></i> About</a>
+            <a href="#why-us" class="footer__link"><i class="fas fa-star"></i> Features</a>
+            <a href="#versions" class="footer__link"><i class="fas fa-code-branch"></i> Releases</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Downloads</h4>
+          <div class="footer__links">
+            <a href="uniscript Setup 1.0.0.exe" class="footer__link"><i class="fab fa-windows"></i> Windows Installer</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+            <a href="#" class="footer__link"><i class="fas fa-file-contract"></i> Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 un&amp;script. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="footer__social" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" class="footer__social" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="toast" id="toast">
+    <i class="toast__icon fas fa-check-circle"></i>
+    <span class="toast__text"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
